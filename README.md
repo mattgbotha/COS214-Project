@@ -4,7 +4,7 @@ Project Description:
 COS214 end-of-year group project.
 
 Group Members:
-Ethan - 
+Ethan - u19042699
 Wian - 
 Matthew - u20514612
 Franko - u20454661
