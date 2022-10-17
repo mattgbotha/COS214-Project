@@ -7,7 +7,10 @@
 #include "Medic.h"
 
 class AirMedic : public Medic{
-
+public:
+    AirMedic();
+    ~AirMedic();
+    int act();
 };
 
 #endif //AIR_MEDIC_H
