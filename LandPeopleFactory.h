@@ -5,6 +5,9 @@
 #ifndef LAND_PEOPLE_FACTORY_H
 #define LAND_PEOPLE_FACTORY_H
 #include "PeopleFactory.h"
+#include "LandCitizen.h"
+#include "Army.h"
+#include "LandMedic.h"
 
 class LandPeopleFactory : public PeopleFactory{
 public:

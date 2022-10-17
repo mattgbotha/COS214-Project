@@ -5,6 +5,9 @@
 #ifndef WATER_PEOPLE_FACTORY_H
 #define WATER_PEOPLE_FACTORY_H
 #include "PeopleFactory.h"
+#include "Navy.h"
+#include "SeaMedic.h"
+#include "LandCitizen.h"
 
 class WaterPeopleFactory : public PeopleFactory{
 public:

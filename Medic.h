@@ -8,6 +8,7 @@
 
 class Medic : public People{
 public:
+    virtual ~Medic();
     virtual int act();
 };
 

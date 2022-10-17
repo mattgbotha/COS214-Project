@@ -5,6 +5,9 @@
 #ifndef AIR_PEOPLE_FACTORY_H
 #define AIR_PEOPLE_FACTORY_H
 #include "PeopleFactory.h"
+#include "Pilot.h"
+#include "AirMedic.h"
+#include "LandCitizen.h"
 
 class AirPeopleFactory : public PeopleFactory{
 public:

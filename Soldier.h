@@ -8,6 +8,7 @@
 
 class Soldier : public People{
 public:
+    virtual ~Soldier();
     virtual int act();
 };
 
