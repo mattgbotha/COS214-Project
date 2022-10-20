@@ -5,7 +5,7 @@ COS214 end-of-year group project.
 
 Group Members:
 Ethan - u19042699
-Wian - 
+Wian - u21433748
 Matthew - u20514612
 Franko - u20454661
 Amicke - 20532009
