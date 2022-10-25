@@ -10,10 +10,6 @@ public:
 	ConcreteCountryFactory();
 	~ConcreteCountryFactory();
 	virtual Country* produceCountry(std::string name) override;
-
-	// virtual Country* produceAlly(std::string name) override;
-	// virtual Country* produceEnemy(std::string name) override;
-
 };
 
 #endif
