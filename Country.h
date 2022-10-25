@@ -11,9 +11,9 @@ using namespace std;
 
 class Country {
 private:
-	string name;					// Name of the country
-	int ID;							// Country ID
-	int numPeople;					// Number of people in the country
+	string name;
+	int ID;
+	int numPeople;
 
 	Country* allies;				// Array of allied countries
 	Country* enemies;				// Array of enemy countries
@@ -28,7 +28,6 @@ public:
 	string getName();
 	int getNumPeople();
 	int getID();
-
 	void setName(string name);
 	void setNumPeople(int numPeople);
 
