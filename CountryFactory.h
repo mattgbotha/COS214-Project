@@ -10,10 +10,6 @@ public:
 	CountryFactory();
 	virtual ~CountryFactory();
 	virtual Country* produceCountry(std::string name) = 0;
-
-	// Will these be useful?...
-	// virtual Country* produceAlly(std::string name) = 0;
-	// virtual Country* produceEnemy(std::string name) = 0;
 };
 
 #endif
