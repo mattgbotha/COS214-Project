@@ -6,5 +6,5 @@
 PeopleAliveState::PeopleAliveState() {}
 
 int PeopleAliveState::handle(int dmg) {
-    return (2*dmg)
+    return 2;
 }

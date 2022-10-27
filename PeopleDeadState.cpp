@@ -6,5 +6,5 @@
 PeopleDeadState::PeopleDeadState() {}
 
 int PeopleDeadState::handle(int dmg) {
-    return (0*dmg);
+    return 0;
 }

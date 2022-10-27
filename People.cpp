@@ -3,6 +3,9 @@
 //
 #include "People.h"
 
+People::People(){}
+People::~People(){}
+
 void People::changeStateAlive() {
     state = new PeopleAliveState();
 }

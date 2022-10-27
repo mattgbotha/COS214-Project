@@ -10,10 +10,10 @@
 #include "PeopleInjuredState.h"
 
 class People{
-private:
+public:
     int dmg;
     PeopleStatus* state;
-public:
+
     People();
     virtual ~People();
 

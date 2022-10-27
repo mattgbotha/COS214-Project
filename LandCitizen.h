@@ -7,9 +7,11 @@
 #include "Citizen.h"
 
 class LandCitizen : public Citizen{
-    LandCitizen();
     ~LandCitizen();
     int act();
+
+public:
+    LandCitizen();
 };
 
 #endif //LAND_CITIZEN_H

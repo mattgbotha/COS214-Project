@@ -9,7 +9,7 @@
 class AirMedic : public Medic{
 public:
     AirMedic();
-    ~AirMedic();
+    ~AirMedic() override;
     int act();
 };
 
