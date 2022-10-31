@@ -4,7 +4,7 @@
 
 #include "ConcreteCountryFactory.h"
 
-ConcreteCountryFactory::ConcreteCountryFactory() = default;
+ConcreteCountryFactory::ConcreteCountryFactory() {}
 
 ConcreteCountryFactory::~ConcreteCountryFactory() {
     cout << "Country Factory deleted." << endl;
