@@ -7,9 +7,9 @@
 
 class ConcreteCountryFactory : public CountryFactory {
 public:
-	ConcreteCountryFactory();
-	~ConcreteCountryFactory();
-	virtual Country* produceCountry(std::string name) override;
+    ConcreteCountryFactory();
+    ~ConcreteCountryFactory();
+    Country* produceCountry(string name) override;
 };
 
 #endif

@@ -4,12 +4,13 @@
 #define COUNTRYFACTORY_H
 
 #include "Country.h"
+#include "ConcreteCountry.h"
 
 class CountryFactory {
 public:
-	CountryFactory();
-	virtual ~CountryFactory();
-	virtual Country* produceCountry(std::string name) = 0;
+    CountryFactory();
+    virtual ~CountryFactory();
+    virtual Country* produceCountry(string name) = 0;
 };
 
 #endif
