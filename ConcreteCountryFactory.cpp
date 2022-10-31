@@ -4,13 +4,12 @@
 
 #include "ConcreteCountryFactory.h"
 
-ConcreteCountryFactory::ConcreteCountryFactory() {}
+ConcreteCountryFactory::ConcreteCountryFactory() = default;
 
 ConcreteCountryFactory::~ConcreteCountryFactory() {
     cout << "Country Factory deleted." << endl;
 }
 
-Country* CountryFactory::produceCountry(string name) {
-    Country* newCountry = new ConcreteCountry(name);
-    return newCountry;
+Country* ConcreteCountryFactory::produceCountry(string name) {
+    return new ConcreteCountry(name);
 }

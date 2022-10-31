@@ -22,9 +22,9 @@ private:
     int numPeople;
 
 protected:
-    Country* allies;
-    Country* enemies;
-    vector<People> citizens;
+    vector<Country*> allies;
+    vector<Country*> enemies;
+    vector<People*> citizens;
 
 public:
     Country();

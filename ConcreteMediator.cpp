@@ -3,3 +3,11 @@
 //
 
 #include "ConcreteMediator.h"
+
+ConcreteMediator::ConcreteMediator() {
+
+}
+
+ConcreteMediator::~ConcreteMediator() {
+
+}
