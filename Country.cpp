@@ -9,7 +9,6 @@ using namespace std;
         return;
     };
 	
-
 	string Country::getName()
     {
         return this->name;
@@ -18,10 +17,7 @@ using namespace std;
     {
         return this->numPeople;
     };
-	int Country::getID()
-    {
-        return this->ID;
-    };
+	
 	void Country::setName(string name)
     {
         this->name = name;
