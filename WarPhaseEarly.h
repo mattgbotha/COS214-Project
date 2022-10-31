@@ -7,6 +7,8 @@
 #include "WarPhase.h"
 #include "WarPhaseMiddle.h"
 
+class WarEngine;
+
 class WarPhaseEarly : public WarPhase {
 public:
     void warAlgorithm(WarEngine& x) override;

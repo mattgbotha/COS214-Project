@@ -22,16 +22,14 @@ private:
     int numPeople;
 
 protected:
-    vector<Country*> allies;
-    vector<Country*> enemies;
     vector<People*> citizens;
 
 public:
     Country();
     Country(string name);
     virtual ~Country();
-    virtual void attack() = 0;
-    virtual void defend() = 0;
+    virtual int attack() = 0;
+    virtual void defend(int damage) = 0;
     void randomPeople();
     int randomNumInRange(int min, int max);
     string getName();

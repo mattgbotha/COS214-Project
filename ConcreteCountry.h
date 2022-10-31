@@ -13,8 +13,8 @@ public:
     ConcreteCountry(string name);
     virtual ~ConcreteCountry();
 
-    void attack() override;
-    void defend() override;
+    int attack() override;
+    void defend(int dmg) override;
 };
 
 #endif

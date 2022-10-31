@@ -9,7 +9,7 @@
 class WarPhase{
 public:
     virtual ~WarPhase();
-    virtual void warAlgorithm(WarEngine& x);
+    virtual void warAlgorithm(WarEngine& x) = 0;
 };
 
 #endif //CODE_WAR_PHASE_H

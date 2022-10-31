@@ -26,13 +26,17 @@ void WarPhaseEarly::warAlgorithm(WarEngine& x) {
     cin >> size;
 
     if (size == "SMALL" || size == "small" || size == "Small"){
-        numCountries = 2;
+        numCountries = 3;
     }
     else if (size == "MEDIUM" || size == "medium" || size == "Medium"){
         numCountries = 5;
     }
     else if (size == "LARGE" || size == "large" || size == "Large"){
         numCountries = 7;
+    }
+    else{
+        cout << "not accepted";
+        numCountries = -1;
     }
 
     cout << endl;
@@ -43,6 +47,15 @@ void WarPhaseEarly::warAlgorithm(WarEngine& x) {
         x.countries.push_back(x.factory->produceCountry(countryNames[k]));
     }
 
+    x.allies.push_back(x.player);
+
+    for (int i = 0; i < numCountries; i++){
+        if (i%2 == 0){
+            x.allies.push_back(x.countries.at(i));
+        }else{
+            x.enemies.push_back(x.countries.at(i));
+        }
+    }
 
 
     cout << "Welcome to the war, " << name << endl;

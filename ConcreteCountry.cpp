@@ -12,14 +12,10 @@ ConcreteCountry::~ConcreteCountry() {
     cout << this->getName() << " deleted." << endl;
 }
 
-void ConcreteCountry::attack() {
-    for(int i = 0; i < getNumPeople(); i++) {
-        people[i].act();
-    }
+int ConcreteCountry::attack() {
+    return -1;
 }
 
-void ConcreteCountry::defend() {
-    for (int i = 0; i < getNumPeople(); i++) {
-        people[i].act();
-    }
+void ConcreteCountry::defend(int damage) {
+
 }

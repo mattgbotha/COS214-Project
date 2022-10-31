@@ -8,8 +8,8 @@
 class Mediator {
 public:
     Mediator();
-    ~Mediator();
-    void notify()
+    virtual ~Mediator();
+    virtual void notify() = 0;
 };
 
 #endif //MEDIATOR_H
