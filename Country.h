@@ -5,6 +5,7 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
 #include "People.h"
 #include "Mediator.h"
 
@@ -18,7 +19,7 @@ private:
 protected:
     Country* allies;
     Country* enemies;
-    People* people;
+    vector<People> citizens;
 
 public:
     Country();
