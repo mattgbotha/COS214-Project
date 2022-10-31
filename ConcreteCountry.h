@@ -11,7 +11,6 @@ class ConcreteCountry : public Country {
 public:
     ConcreteCountry();
     ConcreteCountry(string name);
-    ConcreteCountry(string name, int numPeople);
     virtual ~ConcreteCountry();
 
     void attack() override;

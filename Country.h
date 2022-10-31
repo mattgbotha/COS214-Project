@@ -6,8 +6,13 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <random>
+
 #include "People.h"
 #include "Mediator.h"
+#include "AirPeopleFactory.h"
+#include "LandPeopleFactory.h"
+#include "WaterPeopleFactory.h"
 
 using namespace std;
 
@@ -24,15 +29,13 @@ protected:
 public:
     Country();
     Country(string name);
-    Country(string name, int numPeople);
     virtual ~Country();
-    string getName();
-    void setName(string name);
-    int getNumPeople();
-    void setNumPeople(int numPeople);
     virtual void attack() = 0;
     virtual void defend() = 0;
-
+    void randomPeople();
+    int randomNumInRange(int min, int max);
+    string getName();
+    int getNumPeople();
     /* Implement
     void changed();
     void get();

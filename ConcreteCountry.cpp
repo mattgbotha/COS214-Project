@@ -8,8 +8,6 @@ ConcreteCountry::ConcreteCountry() : Country() {}
 
 ConcreteCountry::ConcreteCountry(string name) : Country(name) {}
 
-ConcreteCountry::ConcreteCountry(string name, int numPeople) : Country(name, numPeople) {}
-
 ConcreteCountry::~ConcreteCountry() {
     cout << this->getName() << " deleted." << endl;
 }
