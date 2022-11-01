@@ -6,6 +6,11 @@
 #define ARMY_H
 #include "Soldier.h"
 
+/** @author Ethan
+ * @date 17 October 2022
+ *
+ * The Soldiers represented to be stationed on land
+ */
 class Army : public Soldier{
 public:
     Army();

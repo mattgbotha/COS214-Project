@@ -9,6 +9,12 @@
 #include "Army.h"
 #include "LandMedic.h"
 
+/** @author Ethan
+ *  @date 17 October 2022
+ *
+ *  A specilisation of the PeopleFactory class - it creates Army,
+ *      LandCitizen and LandMedic objects.
+ */
 class LandPeopleFactory : public PeopleFactory{
 public:
     LandPeopleFactory();

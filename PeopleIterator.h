@@ -6,6 +6,12 @@
 #define CODE_PEOPLE_ITERATOR_H
 #include <vector>
 
+/** @author Ethan
+ *  @date 27 October 2022
+ *
+ *  The PeopleIterator class is used to access the elements of
+ *      People objects (Medics, Soldiers and Citizens)
+ */
 class People;
 
 class PeopleIterator {
