@@ -14,6 +14,8 @@ class ConcreteMediator : public Mediator {
 public:
     ConcreteMediator();
     ~ConcreteMediator();
+    /// @brief Notifies The specified Country
+    /// @param country Country object to be notified
     virtual void notify(ConcreteCountry* country);
 private:
     Country* countryList;
