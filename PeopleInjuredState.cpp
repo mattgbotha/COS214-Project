@@ -5,6 +5,6 @@
 
 PeopleInjuredState::PeopleInjuredState() {}
 
-int PeopleInjuredState::handle(int dmg) {
+int PeopleInjuredState::handle() {
     return 1;
 }

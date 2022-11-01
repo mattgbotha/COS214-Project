@@ -20,10 +20,19 @@ int ConcreteCountry::attack() {
     }
 
     totalAttack = totalAttack * transport->request();
-
     return totalAttack;
 }
 
 void ConcreteCountry::defend(int damage) {
+    int damageTaken = damage/3;
+    int peopleKilled = damageTaken * 0.25;
+    int peopleInjured = damageTaken - peopleKilled - 1;
 
+    for (int i = 0; i < getNumPeople(); i++){
+        if (citizens[i]->state->handle() == 2){ //currently alive
+
+        }
+    }
+
+    cout << damageTaken << endl;
 }

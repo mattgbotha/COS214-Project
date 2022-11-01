@@ -5,6 +5,6 @@
 
 PeopleDeadState::PeopleDeadState() {}
 
-int PeopleDeadState::handle(int dmg) {
+int PeopleDeadState::handle() {
     return 0;
 }

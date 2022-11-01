@@ -5,6 +5,6 @@
 
 PeopleAliveState::PeopleAliveState() {}
 
-int PeopleAliveState::handle(int dmg) {
+int PeopleAliveState::handle() {
     return 2;
 }

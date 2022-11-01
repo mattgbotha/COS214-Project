@@ -8,7 +8,7 @@
 class PeopleStatus{ //Alive,Dead,Injured states
 public:
     virtual ~PeopleStatus();
-    virtual int handle(int dmg) = 0;
+    virtual int handle() = 0;
 };
 
 #endif //PEOPLE_STATUS_H
