@@ -20,5 +20,5 @@ LandCitizen::~LandCitizen(){
  * @return damage dealt
  */
 int LandCitizen::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

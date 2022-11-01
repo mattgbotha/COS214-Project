@@ -5,8 +5,9 @@
 #include "WarPhaseMiddle.h"
 
 void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
-    cout << "Middle" << endl;
+    cout << "----------------------Middle----------------" << endl;
     cout << x.countries[0]->getName() << endl;
     cout << x.countries[0]->attack() << endl;
     x.countries[0]->defend(x.countries[0]->attack());
+    cout << x.countries[0]->attack() << endl;
 }

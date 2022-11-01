@@ -20,5 +20,5 @@ Army::~Army(){
  * @return damage dealt
  */
 int Army::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }
