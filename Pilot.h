@@ -6,6 +6,11 @@
 #define PILOT_H
 #include "Soldier.h"
 
+/** @author Ethan
+ * @date 17 October 2022
+ *
+ * Soldiers stationed for aerial battle
+ */
 class Pilot : public Soldier{
 public:
     Pilot();

@@ -5,6 +5,10 @@
 
 PeopleAliveState::PeopleAliveState() {}
 
-int PeopleAliveState::handle(int dmg) {
-    return (2*dmg)
+/** The damage a People object can do in the Alive state
+ *
+ * @return Damage the People object is capable of whilst "alive", in this case, 2
+ */
+int PeopleAliveState::handle() {
+    return 2;
 }

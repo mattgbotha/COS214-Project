@@ -5,6 +5,10 @@
 
 PeopleInjuredState::PeopleInjuredState() {}
 
-int PeopleInjuredState::handle(int dmg) {
-    return (1*dmg);
+/** The damage a People object can do while being injured
+ *
+ * @return 1
+ */
+int PeopleInjuredState::handle() {
+    return 1;
 }

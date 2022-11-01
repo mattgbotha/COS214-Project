@@ -1,4 +1,6 @@
-// Created by Matt on 2022/10/17.
+//
+// Created by mattg on 2022/10/31.
+//
 
 #ifndef CONCRETECOUNTRY_H
 #define CONCRETECOUNTRY_H
@@ -7,11 +9,16 @@
 
 class ConcreteCountry : public Country {
 public:
+	/// @brief base Constructor for concreteCountry
 	ConcreteCountry();
-	ConcreteCountry(string name, int numPeople);
+	/// @brief Paramaterized Constructor for ConcreteCountry
+	/// @param name Country Name as string
+	ConcreteCountry(string name);
 	virtual ~ConcreteCountry();
-	virtual void attack() override;	// Call act() method on each person in people[]
-	virtual void defend() override;	// Call act() method on each person in people[]
+	/// @brief attack() method calls the act() method on all people in this countrys people[]
+	int attack() override;	// Call act() method on each person in people[]
+	/// @brief defend() method calls the act() method on all people in this countrys people[]
+	void defend(int dmg) override;	// Call act() method on each person in people[]
 };
 
 #endif
