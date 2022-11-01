@@ -13,6 +13,7 @@
 #include "AirPeopleFactory.h"
 #include "LandPeopleFactory.h"
 #include "WaterPeopleFactory.h"
+#include "Transport.h"
 
 using namespace std;
 
@@ -22,9 +23,8 @@ private:
     int numPeople;
 
 protected:
-    Country* allies;
-    Country* enemies;
-    vector<People> citizens;
+    Transport* transport;
+    vector<People*> citizens;
 
 public:
     Country();
@@ -33,9 +33,11 @@ public:
     Country(string name);
     virtual ~Country();
     /// @brief Pure Virtual attack() function
-    virtual void attack() = 0;
+    /// @return Damage number that the country will deal
+    virtual int attack() = 0;
     /// @brief Pure virtual Defend() function
-    virtual void defend() = 0;
+    /// @param damage Damage number that the country will take
+    virtual void defend(int damage) = 0;
     /// @brief Populates the people vector with between 20 - 30 people of random Jobs
     void randomPeople();
     /// @brief Generates a random number in the range

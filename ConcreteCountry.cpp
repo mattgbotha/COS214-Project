@@ -12,14 +12,27 @@ ConcreteCountry::~ConcreteCountry() {
     cout << this->getName() << " deleted." << endl;
 }
 
-void ConcreteCountry::attack() {
-    for(int i = 0; i < getNumPeople(); i++) {
-        people[i].act();
+int ConcreteCountry::attack() {
+    int totalAttack = 0;
+
+    for (int i = 0; i < getNumPeople(); i++){
+        totalAttack = totalAttack + citizens[i]->act();
     }
+
+    totalAttack = totalAttack * transport->request();
+    return totalAttack;
 }
 
-void ConcreteCountry::defend() {
-    for (int i = 0; i < getNumPeople(); i++) {
-        people[i].act();
+void ConcreteCountry::defend(int damage) {
+    int damageTaken = damage/3;
+    int peopleKilled = damageTaken * 0.25;
+    int peopleInjured = damageTaken - peopleKilled - 1;
+
+    for (int i = 0; i < getNumPeople(); i++){
+        if (citizens[i]->state->handle() == 2){ //currently alive
+
+        }
     }
+
+    cout << damageTaken << endl;
 }

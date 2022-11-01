@@ -3,3 +3,15 @@
 //
 
 #include "ConcreteMediator.h"
+
+ConcreteMediator::ConcreteMediator() {
+
+}
+
+ConcreteMediator::~ConcreteMediator() {
+
+}
+
+void ConcreteMediator::notify(ConcreteCountry *country) {
+
+}

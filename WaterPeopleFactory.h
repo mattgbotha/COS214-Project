@@ -9,6 +9,12 @@
 #include "SeaMedic.h"
 #include "LandCitizen.h"
 
+/** @author Ethan
+ *  @date 17 October 2022
+ *
+ *  A specilisation of the PeopleFactory class, the WaterPeopleFactory class
+ *      creates Navy and SeaMedic objects
+ */
 class WaterPeopleFactory : public PeopleFactory{
 public:
     WaterPeopleFactory();

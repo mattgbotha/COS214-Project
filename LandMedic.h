@@ -6,6 +6,11 @@
 #define LAND_MEDIC_H
 #include "Medic.h"
 
+/** @author Ethan
+ * @date 17 October 2022
+ *
+ * Medics stationed on the ground
+ */
 class LandMedic : public Medic{
 public:
     LandMedic();

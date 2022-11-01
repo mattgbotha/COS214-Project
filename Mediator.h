@@ -8,9 +8,9 @@
 class Mediator {
 public:
     Mediator();
-    ~Mediator();
+    virtual ~Mediator();
     /// @brief Notifies attached objects
-    void notify()
+    virtual void notify() = 0;
 };
 
 #endif //MEDIATOR_H

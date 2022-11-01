@@ -7,6 +7,11 @@
 
 #include "People.h"
 
+/** @author Ethan
+ *  @date 17 October 2022
+ *
+ *  The abstract class for creations of People classes
+ */
 class PeopleFactory{
 public:
     PeopleFactory();

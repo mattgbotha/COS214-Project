@@ -6,6 +6,11 @@
 #define SEA_MEDIC_H
 #include "Medic.h"
 
+/** @author Ethan
+ *  @date 17 October 2022
+ *
+ *  Specilisation of Medic - those stationed at sea
+ */
 class SeaMedic : public Medic{
 public:
     SeaMedic();

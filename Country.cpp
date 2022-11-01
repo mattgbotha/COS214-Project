@@ -8,31 +8,33 @@ Country::Country() {
 Country::Country(string name) {
     this->name = name;
     randomPeople();
+    transport = new Transport;
+    transport->setStateWorking();
 }
-Country::~Country() {}
+Country::~Country() = default;
 
 void Country::randomPeople() {
     // Factories to initialize people
-    AirPeopleFactory airFactory = new AirPeopleFactory();
-    LandPeopleFactory landFactory = new LandPeopleFactory();
-    WaterPeopleFactory waterFactory = new WaterPeopleFactory();
+    auto* airFactory = new AirPeopleFactory();
+    auto* landFactory = new LandPeopleFactory();
+    auto* waterFactory = new WaterPeopleFactory();
 
     // Random number of people between 20 and 30
     int n = randomNumInRange(20, 30);
-
+    this->numPeople = n;
     // Populate vector with a random type of person
     for (int i = 0; i < n; i++) {
         int tempRand = randomNumInRange(1, 9);
         switch(tempRand) {
-            case 1: citizens.push_back(airFactory.createCitizen()); break;
-            case 2: citizens.push_back(airFactory.createMedic()); break;
-            case 3: citizens.push_back(airFactory.createSoldier()); break;
-            case 4: citizens.push_back(landFactory.createCitizen()); break;
-            case 5: citizens.push_back(landFactory.createMedic()); break;
-            case 6: citizens.push_back(landFactory.createSoldier()); break;
-            case 7: citizens.push_back(waterFactory.createCitizen()); break;
-            case 8: citizens.push_back(waterFactory.createMedic()); break;
-            case 9: citizens.push_back(waterFactory.createSoldier()); break;
+            case 1: citizens.push_back(airFactory->createCitizen()); break;
+            case 2: citizens.push_back(airFactory->createMedic()); break;
+            case 3: citizens.push_back(airFactory->createSoldier()); break;
+            case 4: citizens.push_back(landFactory->createCitizen()); break;
+            case 5: citizens.push_back(landFactory->createMedic()); break;
+            case 6: citizens.push_back(landFactory->createSoldier()); break;
+            case 7: citizens.push_back(waterFactory->createCitizen()); break;
+            case 8: citizens.push_back(waterFactory->createMedic()); break;
+            case 9: citizens.push_back(waterFactory->createSoldier()); break;
             default: cout << "Citizen not created." << endl;
         }
     }
@@ -42,7 +44,7 @@ void Country::randomPeople() {
 }
 
 int Country::randomNumInRange(int min, int max) {
-    number = min+(rand()%(max-min+1));
+    int number = min+(rand()%(max-min+1));
     return number;
 }
 

@@ -13,13 +13,12 @@ public:
 	ConcreteCountry();
 	/// @brief Paramaterized Constructor for ConcreteCountry
 	/// @param name Country Name as string
-	/// @param numPeople Country Population as int
-	ConcreteCountry(string name, int numPeople);
+	ConcreteCountry(string name);
 	virtual ~ConcreteCountry();
 	/// @brief attack() method calls the act() method on all people in this countrys people[]
-	void attack() override;	// Call act() method on each person in people[]
+	int attack() override;	// Call act() method on each person in people[]
 	/// @brief defend() method calls the act() method on all people in this countrys people[]
-	void defend() override;	// Call act() method on each person in people[]
+	void defend(int dmg) override;	// Call act() method on each person in people[]
 };
 
 #endif
