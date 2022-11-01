@@ -9,9 +9,14 @@
 #include "PeopleDeadState.h"
 #include "PeopleInjuredState.h"
 
+/** @author Ethan
+ * @date 17 October 2022
+ *
+ * Represents a specific country's military
+        capacity and population */
 class People{
 public:
-    int dmg;
+    int dmg; ///< The damage a People object can do
     PeopleStatus* state;
 
     People();

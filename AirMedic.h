@@ -6,6 +6,11 @@
 #define AIR_MEDIC_H
 #include "Medic.h"
 
+/** @author Ethan
+ *  @date 17 October 2022
+ *
+ *  Specilisation of Medic - those stationed in the air
+ */
 class AirMedic : public Medic{
 public:
     AirMedic();
