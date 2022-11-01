@@ -13,7 +13,15 @@ ConcreteCountry::~ConcreteCountry() {
 }
 
 int ConcreteCountry::attack() {
-    return -1;
+    int totalAttack = 0;
+
+    for (int i = 0; i < getNumPeople(); i++){
+        totalAttack = totalAttack + citizens[i]->act();
+    }
+
+    totalAttack = totalAttack * transport->request();
+
+    return totalAttack;
 }
 
 void ConcreteCountry::defend(int damage) {

@@ -11,8 +11,6 @@ class WorkingTransportState : public TransportState{
 
 public:
     float handle();
-    //void setMULTI(float);
-
 };
 
 

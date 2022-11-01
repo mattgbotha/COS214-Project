@@ -6,6 +6,5 @@
 
 
 float WorkingTransportState::handle() {
-
     return 1;
 }

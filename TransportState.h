@@ -7,12 +7,9 @@
 
 
 class TransportState {
-private :
-   // float MULTI = 1;
 public:
     virtual float handle() =0;
-   // virtual void setMulti(float) = 0;
-
+    virtual ~TransportState() = default;
 };
 
 

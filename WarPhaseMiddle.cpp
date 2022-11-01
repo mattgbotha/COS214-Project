@@ -7,4 +7,5 @@
 void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     cout << "Middle" << endl;
     cout << x.countries[0]->getName() << endl;
+    cout << x.countries[0]->attack() << endl;
 }

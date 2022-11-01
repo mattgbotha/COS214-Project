@@ -6,13 +6,18 @@
 #define COS214_PROJECT_TRANSPORT_H
 
 #include "TransportState.h"
+#include "WorkingTransportState.h"
+#include "BrokenTransportState.h"
+
 class Transport {
 private:
     TransportState* state;
 
 public:
-    void request();
-
+    virtual ~Transport();
+    float request();
+    void setStateWorking();
+    void setStateBroken();
 };
 
 
