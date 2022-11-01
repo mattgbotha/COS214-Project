@@ -5,5 +5,5 @@
 #include "WarPhaseLate.h"
 
 void WarPhaseLate::warAlgorithm(WarEngine& x) {
-
+    cout << "----------Late------------" << endl;
 }

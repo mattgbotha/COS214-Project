@@ -12,17 +12,17 @@ using namespace std;
 void WarPhaseEarly::warAlgorithm(WarEngine& x) {
     srand(time(nullptr));
     string name, size;
-    string countryNames[10] = {"France", "United States", "China", "Spain", "Italy", "Germany", "United Kingdom", "Russia", "South Africa", "Antarctica"};
+    vector<string> countryNames{"France", "United States", "China", "Spain", "Italy", "Germany", "United Kingdom", "Russia", "South Africa", "Antarctica"};
     int numCountries;
 
     cout << "Welcome player" << endl;
-    cout << "What would you like your country to be called?";
+    cout << "What would you like your country to be called? - ";
     cin >> name;
     x.player = x.factory->produceCountry(name);
     cout << "Perfect!" << endl;
     cout << endl;
     cout << "How big do you want the war to be?" << endl;
-    cout << "SMALL/MEDIUM/LARGE" << endl;
+    cout << "SMALL/MEDIUM/LARGE - ";
     cin >> size;
 
     if (size == "SMALL" || size == "small" || size == "Small"){
@@ -43,17 +43,18 @@ void WarPhaseEarly::warAlgorithm(WarEngine& x) {
     cout << "Good choice!" << endl;
 
     for (int i = 0; i < numCountries; i++){
-        int k = rand() % 10;
+        int k = rand() % countryNames.size();
         x.countries.push_back(x.factory->produceCountry(countryNames[k]));
+        countryNames.erase(countryNames.begin()+k);
     }
 
     x.allies.push_back(x.player);
 
     for (int i = 0; i < numCountries; i++){
         if (i%2 == 0){
-            x.allies.push_back(x.countries.at(i));
-        }else{
             x.enemies.push_back(x.countries.at(i));
+        }else{
+            x.allies.push_back(x.countries.at(i));
         }
     }
 

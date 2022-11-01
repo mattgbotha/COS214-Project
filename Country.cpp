@@ -22,6 +22,7 @@ void Country::randomPeople() {
     // Random number of people between 20 and 30
     int n = randomNumInRange(20, 30);
     this->numPeople = n;
+    this->numAlive = n;
     // Populate vector with a random type of person
     for (int i = 0; i < n; i++) {
         int tempRand = randomNumInRange(1, 9);
@@ -54,4 +55,8 @@ string Country::getName() {
 
 int Country::getNumPeople() {
     return numPeople;
+}
+
+int Country::getNumAlive() {
+    return numAlive;
 }

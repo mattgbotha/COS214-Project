@@ -14,6 +14,7 @@
 #include "LandPeopleFactory.h"
 #include "WaterPeopleFactory.h"
 #include "Transport.h"
+#include "PeopleIterator.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ private:
     int numPeople;
 
 protected:
+    int numAlive;
     Transport* transport;
     vector<People*> citizens;
 
@@ -51,6 +53,7 @@ public:
     /// @brief getter for numPeople(Poulation)
     /// @return int numPeople
     int getNumPeople();
+    int getNumAlive();
     /* Implement
     void changed();
     void get();
