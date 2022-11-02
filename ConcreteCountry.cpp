@@ -72,3 +72,22 @@ void ConcreteCountry::defend(int damage) {
         }
     }
 }
+
+void ConcreteCountry::heal() {
+    int numMedics = 0;
+    int mTracker;
+
+    for (int i = 0; i < getNumPeople(); i++){
+        if (citizens[i]->dmg == 1){
+            numMedics++;
+        }
+    }
+    mTracker = numMedics;
+    for (int i = 0; i < getNumPeople(); i++){
+        if (citizens[i]->state->handle() == 1){
+            if (mTracker > 0){
+                citizens[i]->changeStateAlive();
+            }
+        }
+    }
+}

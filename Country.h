@@ -54,6 +54,10 @@ public:
     /// @return int numPeople
     int getNumPeople();
     int getNumAlive();
+    void fixTransport();
+    void breakTransport();
+
+    virtual void heal() = 0;
     /* Implement
     void changed();
     void get();

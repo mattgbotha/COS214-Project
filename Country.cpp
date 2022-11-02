@@ -60,3 +60,11 @@ int Country::getNumPeople() {
 int Country::getNumAlive() {
     return numAlive;
 }
+
+void Country::fixTransport() {
+    transport->setStateWorking();
+}
+
+void Country::breakTransport() {
+    transport->setStateBroken();
+}
