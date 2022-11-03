@@ -6,7 +6,7 @@
 
 void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     string playerDecision;
-    int aiDecision = rand()%10;
+    int aiDecision;
     int aiAttackDecision;
 
     cout << "Your opponents are..." << endl;
@@ -30,7 +30,7 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
 
     if (playerDecision == "ATTACK" || playerDecision == "Attack" || playerDecision == "attack"){//attack
         string attackDecision;
-        int breakTransport = rand()%10;
+        int breakTransport = randomNum()%10;
 
         cout << "You have chosen to attack this turn" << endl;
         cout << "Who would you like to launch an attack against?" << endl;
@@ -75,22 +75,37 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     //AI decisions
     //Allies
     for (int i = 1; i < x.allies.size(); i++){  //i starts at 1 because it doesn't include the player
+        aiDecision = randomNum()%10;
+        if (!x.alliesAlive() || !x.enemiesAlive()){
+            goto enterLatePhase;
+        }
+        if (!x.allies[i]->isAlive()){
+            continue;
+        }
         cout << x.allies[i]->getName();
         if (x.allies[i]->requestTransport() != 1){ //transport broken then try fix it
             cout << " has decided to try repair their transport lines" << endl;
             tryRepair(*x.allies[i]);
         }else{
             if (aiDecision < 6){//attack
-                aiAttackDecision = rand()%x.enemies.size();
+                aiAttackDecision = randomNum()%x.enemies.size();
                 cout << " has decided to attack " << x.enemies[aiAttackDecision]->getName() << endl;
                 x.enemies[aiAttackDecision]->defend(x.allies[i]->attack());
             }else{
-                cout << "has decided to heal their troops" << endl;
+                cout << " has decided to heal their troops" << endl;
                 x.allies[i]->heal();
             }
         }
     }
     for (auto & enemy : x.enemies){
+        aiDecision = randomNum()%10;
+        if (!x.alliesAlive() || !x.enemiesAlive()){
+            goto enterLatePhase;
+        }
+        if (!enemy->isAlive()){
+            continue;
+        }
+
         cout << enemy->getName();
         if (enemy->requestTransport() != 1){ //transport broken so try to fix it
             cout << " has decided to attempt to repair their transport lines" << endl;
@@ -98,7 +113,7 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
         }else{
             if (aiDecision < 7){
                 cout << " has decided to launch a counter attack!" << endl;
-                aiAttackDecision = rand()%x.allies.size();
+                aiAttackDecision = randomNum()%x.allies.size();
                 x.allies[aiAttackDecision]->defend(enemy->attack());
             }else{
                 cout << " has decided to allow their troops to heal" << endl;
@@ -106,14 +121,14 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
             }
         }
     }
-
+    goto choice;
 
     enterLatePhase:
     x.phase = new WarPhaseLate();
 }
 
 void WarPhaseMiddle::tryRepair(Country& c) {
-    int transportChance = rand()%10;
+    int transportChance = randomNum()%10;
     if (transportChance <= 6){
         cout << "Succeeded in repairing the transport lines" << endl;
         c.fixTransport();

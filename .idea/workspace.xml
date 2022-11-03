@@ -11,22 +11,28 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="COS214_Project" targetName="COS214_Project" />
+      <config projectName="Code" targetName="Code" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bb25a46-e81d-4e40-b1d7-c0fd7ae69242" name="Changes" comment="Ek commit">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Memento.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Memento.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mementostorage.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mementostorage.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stateMem.h" afterDir="false" />
+    <list default="true" id="3bb25a46-e81d-4e40-b1d7-c0fd7ae69242" name="Changes" comment="warphasemiddle AI finished">
+      <change afterPath="$PROJECT_DIR$/Facade.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facade.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Country.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Country.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Country.h" beforeDir="false" afterPath="$PROJECT_DIR$/Country.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WarEngine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/WarEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarPhase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WarPhase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarPhase.h" beforeDir="false" afterPath="$PROJECT_DIR$/WarPhase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarPhaseEarly.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WarPhaseEarly.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarPhaseLate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WarPhaseLate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarPhaseMiddle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WarPhaseMiddle.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
     <option name="minorVersion" value="2.4" />
   </component>
   <component name="ProjectId" id="2GabzKNI9RLWnAP27FGBx9INb6V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,7 +81,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="COS214_Project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COS214_Project" TARGET_NAME="COS214_Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="COS214_Project" RUN_TARGET_NAME="COS214_Project">
+    <configuration name="Code" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Code" TARGET_NAME="Code" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Code" RUN_TARGET_NAME="Code">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -84,6 +91,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake Application.Code" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -6,3 +6,9 @@
 WarPhase::~WarPhase() = default;
 
 void WarPhase::warAlgorithm(WarEngine &x) {}
+
+int WarPhase::randomNum() {
+    std::default_random_engine gen;
+    std::uniform_int_distribution<int> distribution(0,99);
+    return distribution(gen);
+}

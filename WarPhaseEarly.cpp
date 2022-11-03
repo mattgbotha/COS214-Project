@@ -10,9 +10,8 @@ using namespace std;
 
 //sets up the game by initializing all the member variables accordingly
 void WarPhaseEarly::warAlgorithm(WarEngine& x) {
-    srand(time(nullptr));
     string name, size;
-    vector<string> countryNames{"France", "United States", "China", "Spain", "Italy", "Germany", "United Kingdom", "Russia", "South Africa", "Antarctica"};
+    vector<string> countryNames{"France", "US", "China", "Spain", "Italy", "Germany", "UK", "Russia", "Moon", "Antarctica"};
     int numCountries;
 
     cout << "Welcome player" << endl;
@@ -43,7 +42,7 @@ void WarPhaseEarly::warAlgorithm(WarEngine& x) {
     cout << "Good choice!" << endl;
 
     for (int i = 0; i < numCountries; i++){
-        int k = rand() % countryNames.size();
+        int k = randomNum() % countryNames.size();
         x.countries.push_back(x.factory->produceCountry(countryNames[k]));
         countryNames.erase(countryNames.begin()+k);
     }

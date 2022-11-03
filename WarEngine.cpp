@@ -21,3 +21,19 @@ WarEngine::~WarEngine() {
 void WarEngine::loop() {
     phase->warAlgorithm(*this);
 }
+
+bool WarEngine::alliesAlive() {
+    bool alive = false;
+    for (auto & ally : allies){
+        alive = alive || ally->isAlive();
+    }
+    return alive;
+}
+
+bool WarEngine::enemiesAlive() {
+    bool alive = false;
+    for (auto & enemy : enemies){
+        alive = alive || enemy->isAlive();
+    }
+    return alive;
+}

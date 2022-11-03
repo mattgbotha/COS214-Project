@@ -55,11 +55,11 @@ string Country::getName() {
     return name;
 }
 
-int Country::getNumPeople() {
+int Country::getNumPeople() const {
     return numPeople;
 }
 
-int Country::getNumAlive() {
+int Country::getNumAlive() const {
     return numAlive;
 }
 

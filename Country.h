@@ -46,14 +46,14 @@ public:
     /// @param min Minimum int of range
     /// @param max Maximum int of range
     /// @return int between min and max
-    int randomNumInRange(int min, int max);
+    static int randomNumInRange(int min, int max);
     /// @brief Getter for country name
     /// @return string Country name
     string getName();
     /// @brief getter for numPeople(Poulation)
     /// @return int numPeople
-    int getNumPeople();
-    int getNumAlive();
+    int getNumPeople() const;
+    int getNumAlive() const;
     void fixTransport();
     void breakTransport();
     float requestTransport();

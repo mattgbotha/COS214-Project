@@ -29,6 +29,8 @@ public:
     WarEngine();
     ~WarEngine();
     void loop();
+    bool alliesAlive();
+    bool enemiesAlive();
 
     friend class WarPhaseEarly;
     friend class WarPhaseMiddle;
