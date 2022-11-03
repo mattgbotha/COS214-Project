@@ -14,13 +14,13 @@
  *
  *  Transport.h represents the state of transport which can be broken or working
  */
+
 class Transport {
 private:
     /**
-     * @param state of transport object
+     * @param state of transport
      */
     TransportState* state;
-
 public:
     /**
      * @brief deletion of the state object
