@@ -16,21 +16,27 @@ ConcreteCountry::~ConcreteCountry() {
 int ConcreteCountry::attack() {
     int totalAttack = 0;
 
-    auto* i = new PeopleIterator(citizens);
-    People* p;
+//    auto* i = new PeopleIterator(citizens);
+//    People* p;
+//
+//    int k = 0;
+//    while (&i->at(k) != i->end){
+//        p = &i->at(k);
+//        totalAttack = totalAttack + p->act();
+//        k++;
+//    }
+//    p = i->end;
+//    totalAttack = totalAttack + p->act();
+//
+//    totalAttack = totalAttack * transport->request();
+//    cout << getName() << " attacked for " << totalAttack << endl;
+//    delete p;
+//    delete i;
 
-    int k = 0;
-    while (&i->at(k) != i->end){
-        p = &i->at(k);
-        totalAttack = totalAttack + p->act();
-        k++;
+    for (int i = 0; i < getNumPeople(); i++){
+        totalAttack = totalAttack + citizens[i]->act();
     }
-    p = i->end;
-    totalAttack = totalAttack + p->act();
-
     totalAttack = totalAttack * transport->request();
-    delete p;
-    delete i;
     return totalAttack;
 }
 
@@ -71,6 +77,7 @@ void ConcreteCountry::defend(int damage) {
             }
         }
     }
+    cout << getName() << " took " << damageTaken << " damage and lost " << peopleKilled << " people" << endl;
 }
 
 void ConcreteCountry::heal() {

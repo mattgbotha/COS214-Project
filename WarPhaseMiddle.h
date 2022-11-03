@@ -12,5 +12,6 @@ class WarEngine;
 class WarPhaseMiddle : public WarPhase {
 public:
     void warAlgorithm(WarEngine& x) override;
+    static void tryRepair(Country& c);
 };
 #endif //CODE_WAR_PHASE_MIDDLE_H

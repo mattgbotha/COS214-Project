@@ -11,7 +11,9 @@ Country::Country(string name) {
     transport = new Transport;
     transport->setStateWorking();
 }
-Country::~Country() = default;
+Country::~Country(){
+    delete transport;
+}
 
 void Country::randomPeople() {
     // Factories to initialize people
@@ -67,4 +69,15 @@ void Country::fixTransport() {
 
 void Country::breakTransport() {
     transport->setStateBroken();
+}
+
+float Country::requestTransport() {
+    return transport->request();
+}
+
+bool Country::isAlive() {
+    if (numAlive>0){
+        return true;
+    }
+    return false;
 }
