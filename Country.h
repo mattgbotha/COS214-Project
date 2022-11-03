@@ -56,6 +56,8 @@ public:
     int getNumAlive();
     void fixTransport();
     void breakTransport();
+    float requestTransport();
+    bool isAlive();
 
     virtual void heal() = 0;
     /* Implement
