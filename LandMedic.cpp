@@ -20,5 +20,5 @@ LandMedic::~LandMedic(){
  * @return damage dealt
  */
 int LandMedic::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

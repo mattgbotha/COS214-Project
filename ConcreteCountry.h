@@ -15,10 +15,12 @@ public:
 	/// @param name Country Name as string
 	ConcreteCountry(string name);
 	virtual ~ConcreteCountry();
-	/// @brief attack() method calls the act() method on all people in this countrys people[]
+	/// @brief attack() method sums the act() method of all people in this countrys people[]
 	int attack() override;	// Call act() method on each person in people[]
-	/// @brief defend() method calls the act() method on all people in this countrys people[]
+	/// @brief defend() method uses the passed in integer to determine how much damage the country should take
+	/// @param dmg the damage that the country will take
 	void defend(int dmg) override;	// Call act() method on each person in people[]
+    void heal() override;
 };
 
 #endif

@@ -20,5 +20,5 @@ Navy::~Navy(){
  * @return damage dealt
  */
 int Navy::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

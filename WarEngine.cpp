@@ -6,6 +6,7 @@
 #include "WarPhase.h"
 #include "WarPhaseEarly.h"
 #include "WarPhaseMiddle.h"
+#include "WarPhaseLate.h"
 
 WarEngine::WarEngine() {
     phase = new WarPhaseEarly();
@@ -13,8 +14,8 @@ WarEngine::WarEngine() {
 }
 
 WarEngine::~WarEngine() {
-//    delete phase;
-//    delete factory;
+    delete phase;
+    delete factory;
 }
 
 void WarEngine::loop() {

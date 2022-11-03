@@ -14,6 +14,7 @@
 class WarPhase;
 class WarPhaseEarly;
 class WarPhaseMiddle;
+class WarPhaseLate;
 
 class WarEngine {
 private:
@@ -31,6 +32,7 @@ public:
 
     friend class WarPhaseEarly;
     friend class WarPhaseMiddle;
+    friend class WarPhaseLate;
 };
 
 #endif //CODE_WAR_ENGINE_H
