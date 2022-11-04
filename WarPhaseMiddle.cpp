@@ -44,6 +44,9 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     cout << endl;
 
     choice:
+    if (!x.player->isAlive()){
+        goto aiChoice;
+    }
     cout << "What would you like to do?" << endl;
     cout << "ATTACK/REPAIR/HEAL/UNDO -";
     cin >> playerDecision;
@@ -94,6 +97,7 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
 
     //AI decisions
     //Allies
+    aiChoice:
     for (int i = 1; i < x.allies.size(); i++){  //I start's at 1 because it doesn't include the player
         aiDecision = randomNum()%10;
         if (!x.alliesAlive() || !x.enemiesAlive()){
