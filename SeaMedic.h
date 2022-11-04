@@ -9,7 +9,7 @@
 /** @author Ethan
  *  @date 17 October 2022
  *
- *  Specilisation of Medic - those stationed at sea
+ *  Specialisation of Medic - those stationed at sea
  */
 class SeaMedic : public Medic{
 public:

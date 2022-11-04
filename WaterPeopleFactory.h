@@ -12,7 +12,7 @@
 /** @author Ethan
  *  @date 17 October 2022
  *
- *  A specilisation of the PeopleFactory class, the WaterPeopleFactory class
+ *  A specialisation of the PeopleFactory class, the WaterPeopleFactory class
  *      creates Navy and SeaMedic objects
  */
 class WaterPeopleFactory : public PeopleFactory{
