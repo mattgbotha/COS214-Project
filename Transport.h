@@ -32,10 +32,12 @@ public:
     float request();
     /**
      * @brief creates a new WorkingTransportState object
+     * @see WorkingTransportState
      */
     void setStateWorking();
     /**
      * @brief creates a new BrokenTransportState object
+     * @see BrokenTransportState
      */
     void setStateBroken();
 };

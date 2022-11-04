@@ -6,6 +6,7 @@
 
 /**
  * @brief the stateMem object is being initialise by the TransportState object and the vector array
+ * @see stateMem
  */
 Memento::Memento() {
     state = new stateMem(ts,peparray);
