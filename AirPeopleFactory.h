@@ -14,6 +14,9 @@
  *
  *  A specialisation of the  PeopleFactory class, the AirPeopleFactory creates Pilot and
  *      AirMedic classes/objects
+ *
+ *      @see AirMedic
+ *      @see Pilot
  */
 class AirPeopleFactory : public PeopleFactory{
 public:

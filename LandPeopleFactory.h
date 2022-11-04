@@ -14,6 +14,10 @@
  *
  *  A specialisation of the PeopleFactory class - it creates Army,
  *      LandCitizen and LandMedic objects.
+ *
+ *      @see LandCitizen
+ *      @see Army
+ *      @see LandMedic
  */
 class LandPeopleFactory : public PeopleFactory{
 public:
