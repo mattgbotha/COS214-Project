@@ -6,7 +6,13 @@
 #define CODE_FACADE_H
 #include "WarEngine.h"
 
-
+/** @author Ethan
+ *  @date 3 November 2022
+ *
+ *  The Façade cleans up management of the WarEngine
+ *
+ *  @see WarEngine
+ */
 class Facade {
 private:
     WarEngine* engine;
