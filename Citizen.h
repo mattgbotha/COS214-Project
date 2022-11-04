@@ -8,7 +8,7 @@
 
 /** @author Ethan
  * @date 17 October 2022
- * A specilisation of the People class - Citizen represents a citizen of a country
+ * A specialisation of the People class - Citizen represents a citizen of a country
  */
 class Citizen : public People{
 public:

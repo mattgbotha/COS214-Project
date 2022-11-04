@@ -12,7 +12,7 @@
 /** @author Ethan
  *  @date 17 October 2022
  *
- *  A specilisation of the PeopleFactory class - it creates Army,
+ *  A specialisation of the PeopleFactory class - it creates Army,
  *      LandCitizen and LandMedic objects.
  */
 class LandPeopleFactory : public PeopleFactory{
