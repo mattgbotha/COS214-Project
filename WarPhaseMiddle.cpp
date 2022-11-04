@@ -10,17 +10,37 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     int aiAttackDecision;
 
     cout << "Your opponents are..." << endl;
-    cout << x.enemies[0]->getName();
-    for (int i = 1; i < x.enemies.size(); i++){
-        cout << ", " << x.enemies[i]->getName();
+    cout << " ";
+    for (auto & enemy : x.enemies){
+        int tmp = enemy->getName().size();
+        cout << "__";
+        for (int i = 0; i < tmp; i++){
+            cout << "_";
+        }
+        cout << "__ ";
     }
+    cout << endl << "|  "<< x.enemies[0]->getName() << "  |  ";
+    for (int i = 1; i < x.enemies.size(); i++){
+        cout << x.enemies[i]->getName() << "  |";
+    }
+    cout << endl;
     cout << endl;
 
     cout << "Your allies are..." << endl;
-    cout << x.allies[0]->getName();
-    for (int i = 1; i < x.allies.size(); i++){
-        cout << ", " << x.allies[i]->getName();
+    cout << " ";
+    for (auto & ally : x.allies){
+        int tmp = ally->getName().size();
+        cout << "__";
+        for (int i = 0; i < tmp; i++){
+            cout << "_";
+        }
+        cout << "__ ";
     }
+    cout << endl << "|  " << x.allies[0]->getName() << "  |  ";
+    for (int i = 1; i < x.allies.size(); i++){
+        cout << x.allies[i]->getName() << "  |";
+    }
+    cout << endl;
     cout << endl;
 
     choice:

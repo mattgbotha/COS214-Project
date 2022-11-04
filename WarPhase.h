@@ -6,6 +6,8 @@
 #define CODE_WAR_PHASE_H
 #include "WarEngine.h"
 #include <random>
+#include <iostream>
+#include <cstdlib>
 
 class WarPhase{
 public:

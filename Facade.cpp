@@ -5,15 +5,12 @@
 #include "Facade.h"
 
 void Facade::gameStart() {
+
     for (int i = 0; i < 3; i++){
-        engine->loop();
+        WarEngine::instance().loop();
     }
 }
 
-Facade::~Facade() {
-    delete engine;
-}
+Facade::~Facade() {}
 
-Facade::Facade() {
-    engine = new WarEngine();
-}
+Facade::Facade() {}

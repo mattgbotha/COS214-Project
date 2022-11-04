@@ -37,3 +37,10 @@ bool WarEngine::enemiesAlive() {
     }
     return alive;
 }
+
+WarEngine &WarEngine::instance() {
+    static WarEngine onlyInstance;
+    return onlyInstance;
+}
+
+WarEngine::WarEngine(const WarEngine &) {}
