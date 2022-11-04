@@ -7,7 +7,7 @@
 #include "WarEngine.h"
 #include <random>
 #include <iostream>
-#include <cstdlib>
+#include <chrono>
 
 class WarPhase{
 public:

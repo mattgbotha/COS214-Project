@@ -10,17 +10,39 @@ void WarPhaseLate::warAlgorithm(WarEngine& x) {
     if (x.enemiesAlive() && !x.alliesAlive()){
         cout << "Unfortunately the enemy was triumphant and invaded ";
         for (auto & ally : x.allies){
-            cout << ally->getName() << ", ";
+            cout << ally->getName() << " - ";
         }
         cout << endl;
+        cout << " /$$     /$$                        /$$" << endl;
+        cout << "|  $$   /$$/                       | $$" << endl;
+        cout << " \\  $$ /$$//$$$$$$  /$$   /$$      | $$        /$$$$$$   /$$$$$$$  /$$$$$$" << endl;
+        cout << "  \\  $$$$//$$__  $$| $$  | $$      | $$       /$$__  $$ /$$_____/ /$$__  $$" << endl;
+        cout << R"(   \  $$/| $$  \ $$| $$  | $$      | $$      | $$  \ $$|  $$$$$$ | $$$$$$$$)" << endl;
+        cout << "    | $$ | $$  | $$| $$  | $$      | $$      | $$  | $$ \\____  $$| $$_____/" << endl;
+        cout << "    | $$ |  $$$$$$/|  $$$$$$/      | $$$$$$$$|  $$$$$$/ /$$$$$$$/|  $$$$$$$" << endl;
+        cout << R"(    |__/  \______/  \______/       |________/ \______/ |_______/  \_______/)" << endl;
+
+
+
     }
 
     if (x.alliesAlive() && !x.enemiesAlive()){
         cout << "Miraculously you were victorious over ";
         for (auto & enemy : x.enemies){
-            cout << enemy->getName() << ", ";
+            cout << enemy->getName() << " - ";
         }
         cout << endl;
+        cout << " /$$    /$$ /$$             /$$" << endl;
+        cout << "| $$   | $$|__/            | $$" << endl;
+        cout << "| $$   | $$ /$$  /$$$$$$$ /$$$$$$    /$$$$$$   /$$$$$$  /$$   /$$" << endl;
+        cout << "|  $$ / $$/| $$ /$$_____/|_  $$_/   /$$__  $$ /$$__  $$| $$  | $$" << endl;
+        cout << R"( \  $$ $$/ | $$| $$        | $$    | $$  \ $$| $$  \__/| $$  | $$)" << endl;
+        cout << "  \\  $$$/  | $$| $$        | $$ /$$| $$  | $$| $$      | $$  | $$" << endl;
+        cout << "   \\  $/   | $$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$      |  $$$$$$$" << endl;
+        cout << R"(    \_/    |__/ \_______/   \___/   \______/ |__/       \____  $$)" << endl;
+        cout << "                                                        /$$  | $$" << endl;
+        cout << "                                                       |  $$$$$$/"<< endl;
+        cout << "                                                        \\______/" << endl;
     }
 
     cout << endl;

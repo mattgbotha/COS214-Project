@@ -54,10 +54,11 @@ public:
     /// @return int numPeople
     int getNumPeople() const;
     int getNumAlive() const;
+    int getNumInjured() const;
     void fixTransport();
     void breakTransport();
     float requestTransport();
-    bool isAlive();
+    bool isAlive() const;
 
     virtual void heal() = 0;
     /* Implement

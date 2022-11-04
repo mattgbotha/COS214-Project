@@ -13,5 +13,6 @@ class WarPhaseMiddle : public WarPhase {
 public:
     void warAlgorithm(WarEngine& x) override;
     static void tryRepair(Country& c);
+    static void printStats(const vector<Country*>& v, const vector<Country*>& v2);
 };
 #endif //CODE_WAR_PHASE_MIDDLE_H
