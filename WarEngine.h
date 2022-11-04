@@ -14,6 +14,7 @@
 class WarPhase;
 class WarPhaseEarly;
 class WarPhaseMiddle;
+class WarPhaseLate;
 
 /** @author Ethan
  *  @date 31 October 2022
@@ -34,9 +35,12 @@ public:
     WarEngine();
     ~WarEngine();
     void loop();
+    bool alliesAlive();
+    bool enemiesAlive();
 
     friend class WarPhaseEarly;
     friend class WarPhaseMiddle;
+    friend class WarPhaseLate;
 };
 
 #endif //CODE_WAR_ENGINE_H

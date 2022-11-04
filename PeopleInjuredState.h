@@ -15,7 +15,7 @@
 class PeopleInjuredState : public PeopleStatus{
 public:
     PeopleInjuredState();
-    int handle(int dmg);
+    int handle();
 };
 
 #endif //PEOPLE_INJURED_STATE_H

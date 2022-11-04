@@ -20,5 +20,5 @@ Pilot::~Pilot(){
  * @return damage dealt
  */
 int Pilot::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

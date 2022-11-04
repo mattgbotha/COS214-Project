@@ -18,5 +18,5 @@ AirMedic::~AirMedic(){
  * @return damage dealt
  */
 int AirMedic::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

@@ -7,9 +7,8 @@ PeopleDeadState::PeopleDeadState() {}
 
 /** The damage a People object can do while dead
  *
- * @param dmg The People object's damage
  * @return 0 since logically no damage can be dealt while dead (for humans)
  */
-int PeopleDeadState::handle(int dmg) {
+int PeopleDeadState::handle() {
     return 0;
 }

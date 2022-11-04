@@ -15,7 +15,7 @@
 class PeopleAliveState : public PeopleStatus{
 public:
     PeopleAliveState();
-    int handle(int dmg);
+    int handle();
 };
 
 #endif //PEOPLE_ALIVE_STATE_H

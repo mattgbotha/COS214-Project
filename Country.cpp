@@ -8,8 +8,12 @@ Country::Country() {
 Country::Country(string name) {
     this->name = name;
     randomPeople();
+    transport = new Transport;
+    transport->setStateWorking();
 }
-Country::~Country() = default;
+Country::~Country(){
+    delete transport;
+}
 
 void Country::randomPeople() {
     // Factories to initialize people
@@ -19,7 +23,8 @@ void Country::randomPeople() {
 
     // Random number of people between 20 and 30
     int n = randomNumInRange(20, 30);
-
+    this->numPeople = n;
+    this->numAlive = n;
     // Populate vector with a random type of person
     for (int i = 0; i < n; i++) {
         int tempRand = randomNumInRange(1, 9);
@@ -50,6 +55,29 @@ string Country::getName() {
     return name;
 }
 
-int Country::getNumPeople() {
+int Country::getNumPeople() const {
     return numPeople;
+}
+
+int Country::getNumAlive() const {
+    return numAlive;
+}
+
+void Country::fixTransport() {
+    transport->setStateWorking();
+}
+
+void Country::breakTransport() {
+    transport->setStateBroken();
+}
+
+float Country::requestTransport() {
+    return transport->request();
+}
+
+bool Country::isAlive() {
+    if (numAlive>0){
+        return true;
+    }
+    return false;
 }

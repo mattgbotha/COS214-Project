@@ -9,6 +9,7 @@ class Mediator {
 public:
     Mediator();
     virtual ~Mediator();
+    /// @brief Notifies attached objects
     virtual void notify() = 0;
 };
 

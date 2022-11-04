@@ -6,6 +6,7 @@
 #include "WarPhase.h"
 #include "WarPhaseEarly.h"
 #include "WarPhaseMiddle.h"
+#include "WarPhaseLate.h"
 
 WarEngine::WarEngine() {
     phase = new WarPhaseEarly();
@@ -13,10 +14,26 @@ WarEngine::WarEngine() {
 }
 
 WarEngine::~WarEngine() {
-//    delete phase;
-//    delete factory;
+    delete phase;
+    delete factory;
 }
 
 void WarEngine::loop() {
     phase->warAlgorithm(*this);
+}
+
+bool WarEngine::alliesAlive() {
+    bool alive = false;
+    for (auto & ally : allies){
+        alive = alive || ally->isAlive();
+    }
+    return alive;
+}
+
+bool WarEngine::enemiesAlive() {
+    bool alive = false;
+    for (auto & enemy : enemies){
+        alive = alive || enemy->isAlive();
+    }
+    return alive;
 }

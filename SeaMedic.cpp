@@ -18,5 +18,5 @@ SeaMedic::~SeaMedic(){
  * @return damage dealt
  */
 int SeaMedic::act() {
-    return (dmg * state->handle(dmg));
+    return (dmg * state->handle());
 }

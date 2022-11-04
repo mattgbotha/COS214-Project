@@ -7,9 +7,13 @@
 
 class ConcreteCountryFactory : public CountryFactory {
 public:
-    ConcreteCountryFactory();
-    ~ConcreteCountryFactory();
-    Country* produceCountry(string name) override;
+	/// @brief Constructor
+	ConcreteCountryFactory();
+	~ConcreteCountryFactory();
+	/// @brief Creates and returns a new Country class object
+	/// @param name Country Name as string
+	/// @return new concreteCountry object*
+	Country* produceCountry(string name) override;
 };
 
 #endif

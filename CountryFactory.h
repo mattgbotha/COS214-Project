@@ -8,8 +8,12 @@
 
 class CountryFactory {
 public:
+    
     CountryFactory();
     virtual ~CountryFactory();
+    /// @brief Pure virtual function for Producing country
+    /// @param name Country Name
+    /// @return new concreteCountry Object
     virtual Country* produceCountry(string name) = 0;
 };
 

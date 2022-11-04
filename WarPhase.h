@@ -5,11 +5,13 @@
 #ifndef CODE_WAR_PHASE_H
 #define CODE_WAR_PHASE_H
 #include "WarEngine.h"
+#include <random>
 
 class WarPhase{
 public:
     virtual ~WarPhase();
     virtual void warAlgorithm(WarEngine& x) = 0;
+    static int randomNum();
 };
 
 #endif //CODE_WAR_PHASE_H
