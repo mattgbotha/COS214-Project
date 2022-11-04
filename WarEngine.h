@@ -16,13 +16,19 @@ class WarPhaseEarly;
 class WarPhaseMiddle;
 class WarPhaseLate;
 
+/** @author Ethan
+ *  @date 31 October 2022
+ *
+ *  The WarEngine is the mastermind of the whole game. It is parameterised with a phase which then causes
+ *      the engine to act accordingly in executing the game. The WarEngine has access to phases and countries.
+ */
 class WarEngine {
 private:
-    WarPhase* phase;
-    std::vector<Country*> countries;
-    std::vector<Country*> allies;
-    std::vector<Country*> enemies;
-    Country* player;
+    WarPhase* phase; ///< The current war phase - early, mid or late
+    std::vector<Country*> countries; ///< A vector of all participating countries
+    std::vector<Country*> allies; ///< A vector of the player's country's allies
+    std::vector<Country*> enemies; ///< A vector of the player's country's enemies
+    Country* player; ///
     CountryFactory* factory;
 
 protected:
