@@ -9,6 +9,11 @@
 
 class WarEngine;
 
+/** @author Ethan
+ *  @date 31 October 2022
+ *
+ *  Represents the early state of the war - the setup before any actual battle
+ */
 class WarPhaseEarly : public WarPhase {
 public:
     void warAlgorithm(WarEngine& x) override;

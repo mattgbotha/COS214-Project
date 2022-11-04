@@ -8,10 +8,17 @@
 
 using namespace std;
 
-//sets up the game by initializing all the member variables accordingly
+/** Sets up the game by initialising all the member variables accordingly.
+ *  In summary, this is done by asking for the war size and player country
+ *      and then setting up the ally and enemy vectors (and countries), finally
+ *      updating the phase of the WarEngine to the middle phase to progress the war game.
+ *
+ *
+ * @param x The WarEngine object of the current game
+ */
 void WarPhaseEarly::warAlgorithm(WarEngine& x) {
     string name, size;
-    vector<string> countryNames{"France", "US", "China", "Spain", "Italy", "Germany", "UK", "Russia", "Moon", "Antarctica"};
+    vector<string> countryNames{"France", "US", "China", "Spain", "Italy", "Germany", "UK", "Russia", "Moon", "Antarctica"}; ///< Vector from which participating countries can be chosen depending on war size
     int numCountries;
 
     cout << "Welcome player" << endl;
