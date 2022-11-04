@@ -22,7 +22,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eef05fbe-9b3c-47b7-a0f8-1df879cd1062" name="Changes" comment="Ek commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateMem.h" beforeDir="false" afterPath="$PROJECT_DIR$/stateMem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memento.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Memento.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memento.h" beforeDir="false" afterPath="$PROJECT_DIR$/Memento.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
