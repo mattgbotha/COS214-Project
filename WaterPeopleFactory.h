@@ -14,6 +14,9 @@
  *
  *  A specialisation of the PeopleFactory class, the WaterPeopleFactory class
  *      creates Navy and SeaMedic objects
+ *
+ *      @see SeaMedic
+ *      @see Navy
  */
 class WaterPeopleFactory : public PeopleFactory{
 public:

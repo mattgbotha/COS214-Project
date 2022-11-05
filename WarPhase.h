@@ -9,6 +9,15 @@
 #include <iostream>
 #include <chrono>
 
+/** @author Ethan
+ *  @date 31 October 2022
+ *
+ *  The interface/abstract class for the phase the war is in (early/middle/late)
+ *
+ *  @see WarPhaseEarly
+ *  @see WarPhaseMiddle
+ *  @see WarPhaseLate
+ */
 class WarPhase{
 public:
     virtual ~WarPhase();

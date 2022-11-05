@@ -4,6 +4,24 @@
 
 #include "WarPhaseMiddle.h"
 
+/** The actual battle during the war in the game.
+ *      In summary, the player's enemies and allies are given. Next, the player is repeatedly
+ *      given a choice in the move they wish to make - attack, repair, heal or undo.
+ *
+ *  Attack - the player chooses a country to attack out of the enemy countries. If a random chance succeeds,
+ *      the player also breaks the country's transport lines.
+ *
+ *  Repair - attempt to repair the player's own transport lines
+ *
+ *  Heal - heal player's own troops
+ *
+ *  Undo - undo previous move
+ *
+ *  The AI or computer then also makes its move based on random chance, similar to the player's choices
+ *
+ *  As soon as anyone is defeated (people dead), the WarEngine is pushed to the late phase.
+ * @param x the current game's WarEngine object
+ */
 void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     string playerDecision;
     int aiDecision;
@@ -162,6 +180,11 @@ void WarPhaseMiddle::warAlgorithm(WarEngine& x) {
     x.phase = new WarPhaseLate();
 }
 
+/** Attempt to repair a country's transport lines - by a random 40% chance
+  *      there will be a successful repair
+  *
+  *      @param c The country which transport lines are attempted to be repaired
+  */
 void WarPhaseMiddle::tryRepair(Country& c) {
     int transportChance = randomNum()%10;
     if (transportChance <= 6){

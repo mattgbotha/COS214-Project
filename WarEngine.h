@@ -28,7 +28,7 @@ private:
     std::vector<Country*> countries; ///< A vector of all participating countries
     std::vector<Country*> allies; ///< A vector of the player's country's allies
     std::vector<Country*> enemies; ///< A vector of the player's country's enemies
-    Country* player; ///
+    Country* player; ///< The country in the player's control
     CountryFactory* factory;
 
 protected:

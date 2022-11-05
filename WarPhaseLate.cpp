@@ -4,6 +4,10 @@
 
 #include "WarPhaseLate.h"
 
+/** Determines the victor of the war.
+ *      This is done by checking whether allies or enemies are alive and providing output on the defeated.
+ * @param x The current war game's WarEngine object
+ */
 void WarPhaseLate::warAlgorithm(WarEngine& x) {
     cout << "After a long hard fought war that spanned many battles..." << endl;
 

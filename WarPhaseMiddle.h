@@ -9,6 +9,11 @@
 #include <cstring>
 class WarEngine;
 
+/** @author Ethan
+ *  @date 31 October 2022
+ *
+ *  Represents the middle phase of the war - the action and battle
+ */
 class WarPhaseMiddle : public WarPhase {
 public:
     void warAlgorithm(WarEngine& x) override;
