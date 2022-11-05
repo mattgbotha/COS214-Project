@@ -37,9 +37,15 @@ protected:
     WarEngine(const WarEngine&);
 
 public:
+    /// @brief Loop method is used to run a phase of the WarEngine
     void loop();
+    /// @brief Checks whether any allies are alive
+    /// @return Boolean - True if any allies are still alive
     bool alliesAlive();
+    /// @brief Checks whether any enemies are alive
+    /// @return Boolean - True if any enemies are still alive
     bool enemiesAlive();
+    /// @brief Method to return the Singleton instance of the WarEngine
     static WarEngine& instance();
 
     friend class WarPhaseEarly;

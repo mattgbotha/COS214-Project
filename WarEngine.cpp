@@ -50,6 +50,10 @@ bool WarEngine::enemiesAlive() {
     return alive;
 }
 
+/** Returns a reference to a static WarEngine object that acts as the Singleton
+ *
+ * @return onlyInstance - a static reference to the WarEngine, ensuring that the Singleton is maintained
+ */
 WarEngine &WarEngine::instance() {
     static WarEngine onlyInstance;
     return onlyInstance;

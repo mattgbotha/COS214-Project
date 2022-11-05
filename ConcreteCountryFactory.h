@@ -11,8 +11,8 @@ public:
 	ConcreteCountryFactory();
 	~ConcreteCountryFactory();
 	/// @brief Creates and returns a new Country class object
-	/// @param name Country Name as string
-	/// @return new concreteCountry object*
+	/// @param name name of the country that will be instantiated
+	/// @return Country pointer to the new ConcreteCountry
 	Country* produceCountry(string name) override;
 };
 

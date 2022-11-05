@@ -22,6 +22,8 @@ class WarPhase{
 public:
     virtual ~WarPhase();
     virtual void warAlgorithm(WarEngine& x) = 0;
+    /// @brief Returns a random number between 0 - 99
+    /// @return Int
     static int randomNum();
 };
 

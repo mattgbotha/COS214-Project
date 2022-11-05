@@ -7,17 +7,17 @@
 
 #include "TransportState.h"
 
-/** @author Amicke
- *  @date 2022/11/01
+/** @author Franko Swanepoel
+ *  @date 2022/10/24
  *
- *  A specialization of the TransportState class - transport is in the broken state
+ *  A specialization of the TransportState class - used to indicate the broken state of the Transport class
  */
 
 class BrokenTransportState : public TransportState{
 
 public:
     /**
-     * @brief handles state of transport to be broken when called
+     * @brief returns a value that can be used to determine the amount of damage that a country is able to do
      * @return int of 0.25
      */
     float handle();
