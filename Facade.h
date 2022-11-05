@@ -14,9 +14,6 @@
  *  @see WarEngine
  */
 class Facade {
-private:
-    WarEngine* engine;
-
 public:
     Facade();
     ~Facade();

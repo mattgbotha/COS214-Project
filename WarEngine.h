@@ -31,12 +31,16 @@ private:
     Country* player; ///< The country in the player's control
     CountryFactory* factory;
 
-public:
+protected:
     WarEngine();
     ~WarEngine();
+    WarEngine(const WarEngine&);
+
+public:
     void loop();
     bool alliesAlive();
     bool enemiesAlive();
+    static WarEngine& instance();
 
     friend class WarPhaseEarly;
     friend class WarPhaseMiddle;

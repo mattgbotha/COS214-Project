@@ -6,15 +6,12 @@
 
 /// The WarEngine's loop() function is called thrice @see WarEngine
 void Facade::gameStart() {
+
     for (int i = 0; i < 3; i++){
-        engine->loop();
+        WarEngine::instance().loop();
     }
 }
 
-Facade::~Facade() {
-    delete engine;
-}
+Facade::~Facade() {}
 
-Facade::Facade() {
-    engine = new WarEngine();
-}
+Facade::Facade() {}
