@@ -10,7 +10,7 @@
 #include "Country.h"
 
 /**
- * @author Franko Swanepoel
+ * @author Amicke
  * @date 2022/11/03
  */
 
@@ -26,12 +26,12 @@ private:
     vector<People*> peparray;
      friend class WarEngine;
     /**
-    * @brief Memento constructor to initialise a new stateMem object
-    */
+     * @brief Memento constructor to initialise a new stateMem object
+     */
     Memento();
     /**
-    * @param state - stateMem object
-    */
+     * @param state - stateMem object
+     */
     stateMem* state;
 public:
     virtual ~Memento();
