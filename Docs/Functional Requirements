@@ -1,7 +1,0 @@
-•	Sets up a game for the user to play when the program is started
-•	Allows the user to choose who they would like to attack
-•	The system will change the algorithm used depending on the stage of the game
-•	If a specific country’s transport line gets damaged, that country will be severely hindered until they repair it
-•	Countries will hold different types of people and these types will do different damage numbers to enemy countries
-•	The system must be capable of undoing a previous move made by the user
-•	The system will create different people depending on the kind of area that the war is taking place in
