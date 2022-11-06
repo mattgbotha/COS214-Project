@@ -55,11 +55,11 @@ string Country::getName() {
     return name;
 }
 
-int Country::getNumPeople() {
+int Country::getNumPeople() const {
     return numPeople;
 }
 
-int Country::getNumAlive() {
+int Country::getNumAlive() const {
     return numAlive;
 }
 
@@ -75,9 +75,19 @@ float Country::requestTransport() {
     return transport->request();
 }
 
-bool Country::isAlive() {
+bool Country::isAlive() const {
     if (numAlive>0){
         return true;
     }
     return false;
+}
+
+int Country::getNumInjured() const {
+    int injured = 0;
+    for (auto citizen : citizens){
+        if (citizen->state->handle() == 1){
+            injured++;
+        }
+    }
+    return injured;
 }

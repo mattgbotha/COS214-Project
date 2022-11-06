@@ -9,8 +9,8 @@
 #include "WorkingTransportState.h"
 #include "BrokenTransportState.h"
 
-/** @author Amicke
- *  @date 2022/10/31
+/** @author Franko Swanepoel
+ *  @date 2022/10/24
  *
  *  Transport.h represents the state of transport which can be broken or working
  */
@@ -28,6 +28,7 @@ public:
     virtual ~Transport();
     /**
      * @brief handles the request made of the state of transport to be broken or working
+     * @return Float used as a damage multiplier when calculating the amount of damage that a country can do
      */
     float request();
     /**

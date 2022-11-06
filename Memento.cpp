@@ -5,7 +5,7 @@
 #include "Memento.h"
 
 /**
- * @brief the stateMem object is being initialise by the TransportState object and the vector array
+ * @brief the stateMem object is being initialised by the TransportState object and the vector array
  * @see stateMem
  */
 Memento::Memento() {

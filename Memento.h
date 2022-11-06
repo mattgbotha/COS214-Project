@@ -35,9 +35,6 @@ private:
     stateMem* state;
 public:
     virtual ~Memento();
-
-
-
 };
 
 

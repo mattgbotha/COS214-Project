@@ -12,8 +12,11 @@
 /** @author Ethan
  *  @date 17 October 2022
  *
- *  A specilisation of the  PeopleFactory class, the AirPeopleFactory creates Pilot and
+ *  A specialisation of the  PeopleFactory class, the AirPeopleFactory creates Pilot and
  *      AirMedic classes/objects
+ *
+ *      @see AirMedic
+ *      @see Pilot
  */
 class AirPeopleFactory : public PeopleFactory{
 public:

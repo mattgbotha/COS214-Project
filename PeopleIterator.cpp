@@ -23,7 +23,7 @@ People &PeopleIterator::get() {
     return *current;
 }
 
-/** Obtain a People object a certain index in the vector
+/** Obtain a People object at a certain index in the vector
  *
  * @param x Index of object to return
  * @return People object at index x in the vector
