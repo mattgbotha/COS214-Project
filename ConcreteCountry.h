@@ -22,6 +22,9 @@ public:
 	void defend(int dmg) override;
     /// @brief heal() method allows the country to heal people based on the number of medics that are alive in the country
     void heal() override;
+    /// @brief is able to return a clone of the country
+    /// @return Country* to the clone
+    Country* clone();
 };
 
 #endif

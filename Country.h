@@ -27,7 +27,6 @@ protected:
     int numAlive;
     Transport* transport;
     vector<People*> citizens;
-
 public:
     Country();
     /// @brief Instantiates Country Object
@@ -73,6 +72,9 @@ public:
     /// @brief checks whether the country has any people left alive in it's array
     /// @return returns true if the country is still alive
     bool isAlive() const;
+    /// @brief is able to return a clone of the country
+    /// @return Country* to the clone
+    virtual Country* clone() = 0;
 
 };
 

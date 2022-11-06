@@ -70,3 +70,42 @@ void ConcreteCountry::heal() {
         }
     }
 }
+
+Country *ConcreteCountry::clone() {
+    auto* countryClone = new ConcreteCountry(this->getName());
+    countryClone->citizens.clear();
+    for (auto & p : this->citizens){
+        switch(p->dmg){
+            case 1:
+                countryClone->citizens.push_back(new LandMedic());
+                break;
+            case 2:
+                countryClone->citizens.push_back(new LandCitizen());
+                break;
+            case 3:
+                countryClone->citizens.push_back(new Army());
+                break;
+            default:
+                break;
+        }
+        switch(p->state->handle()){
+            case 0:
+                countryClone->citizens[countryClone->citizens.size()-1]->changeStateDead();
+                break;
+            case 1:
+                countryClone->citizens[countryClone->citizens.size()-1]->changeStateInjured();
+                break;
+            case 2:
+                countryClone->citizens[countryClone->citizens.size()-1]->changeStateAlive();
+                break;
+            default:
+                break;
+        }
+    }
+    if (this->requestTransport() == 1){
+        countryClone->fixTransport();
+    }else{
+        countryClone->breakTransport();
+    }
+    return countryClone;
+}
