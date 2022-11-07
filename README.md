@@ -10,3 +10,5 @@ Matthew - u20514612
 Franko - u20454661
 Amicke - 20532009
 Theodor - 04525087
+
+Google Doc - https://docs.google.com/document/d/1X1P6jbrTJTkq0rjZHz4-wrijJsZJiRzlrygWz0q92ZA/edit?usp=sharing

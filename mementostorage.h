@@ -18,16 +18,18 @@ private:
      * @brief save themem as the new passed in Memento object
      * @param mem - Memento object
      */
-    void storememento(Memento* mem);
-    /**
+   void storememento(Memento* mem);
+   /**
     * returns the Memento object
     * @return themen
     */
-    Memento* getmem();
+   Memento* getmem();
     /**
      * deletes the Memento object
      */
-    ~mementostorage();
+   ~mementostorage();
+
+
 };
 
 
